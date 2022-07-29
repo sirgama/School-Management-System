@@ -4,5 +4,17 @@ from django.shortcuts import render
 
 def dashboard(request):
     
+    context = {
+      'title':'Dashboard'
+        
+    }
+    return render(request, 'modules/dashboard.html', context)
+
+
+def students(request):
     
-    return render(request, 'modules/dashboard.html')
+    context = {
+      'title':'Students'
+        
+    }
+    return render(request, 'modules/students.html', context)
