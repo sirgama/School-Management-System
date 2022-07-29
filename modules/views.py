@@ -18,3 +18,11 @@ def students(request):
         
     }
     return render(request, 'modules/students.html', context)
+
+def exams(request):
+    
+    context = {
+      'title':'Examinations'
+        
+    }
+    return render(request, 'modules/exams.html', context)
