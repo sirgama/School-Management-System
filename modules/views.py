@@ -34,3 +34,11 @@ def cbc(request):
         
     }
     return render(request, 'modules/cbc.html', context)
+
+def timetable(request):
+    
+    context = {
+      'title':'TimeTable'
+        
+    }
+    return render(request, 'modules/timetable.html', context)
