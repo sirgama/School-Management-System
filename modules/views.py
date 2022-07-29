@@ -26,3 +26,11 @@ def exams(request):
         
     }
     return render(request, 'modules/exams.html', context)
+
+def cbc(request):
+    
+    context = {
+      'title':'CBC EXAMS'
+        
+    }
+    return render(request, 'modules/cbc.html', context)
